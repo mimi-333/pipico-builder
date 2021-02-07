@@ -1,0 +1,8 @@
+version: '3'
+services:
+  make:
+    build: .
+    volumes:
+     - ./code:/pico/code
+    environment:
+     - PICO_SDK_PATH=../../pico-sdk
